@@ -14,7 +14,7 @@ Este repositorio contiene el desafío "Cuarta práctica integradora" con las sig
 
 ## Modelo de User
 
-- El modelo de User cuenta con una nueva propiedad “documents” el cual es un array que contiene los objetos con las siguientes propiedades:
+- El modelo de User cuenta con una nueva propiedad “documents” al cual es un array que contiene los objetos con las siguientes propiedades:
 
   - name: String (Nombre del documento).
   - reference: String (link al documento).
