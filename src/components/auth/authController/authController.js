@@ -7,6 +7,9 @@ const authServices = require('../authServices/authServices');
 const passport = require('passport');
 const { config } = require('../../../config');
 const jwt = require('jsonwebtoken');
+/*  Importar el objeto req configurado con el middleware para utilizar logger 
+antes de la inicialización de la app */
+
 class AuthController {
   /* ///////////////////////////////////// */
   /* Jwt */
@@ -56,9 +59,33 @@ class AuthController {
     passport.authenticate('github', { failureRedirect: '/' })(req, res, next);
   };
 
-  githubCallbackRedirect = (req, res) => {
+  /*   githubCallbackRedirect = (req, res) => {
     req.session.user = req.user;
     res.redirect('/products');
+  }; */
+
+  githubCallbackRedirect = async (req, res) => {
+    try {
+      req.session.user = req.user;
+
+      const user = req.user;
+
+      const previousLastConnection = user.last_connection;
+
+      // Actualiza la propiedad "last_connection" al iniciar sesión
+      user.last_connection = new Date();
+
+      await user.save();
+
+      req.logger.debug('Login GitHub success', JSON.stringify(user));
+      req.logger.debug(`Login last_connection -> previous: ${previousLastConnection.toISOString()} -> new: ${user.last_connection.toISOString()}`);
+
+      res.redirect('/products');
+    } catch (error) {
+      // Manejar el error de alguna manera, por ejemplo, registrándolo o redirigiendo a una página de error.
+      console.error('Error en githubCallbackRedirect:', error);
+      res.status(500).send('Ocurrió un error durante la operación.');
+    }
   };
 
   /* //////////////////////////////////// */
