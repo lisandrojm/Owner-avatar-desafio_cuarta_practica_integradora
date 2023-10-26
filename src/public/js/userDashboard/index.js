@@ -273,3 +273,18 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+// Obtén el elemento select y el botón
+const select = document.getElementById('roleSelect');
+const submitButton = document.getElementById('submitButton');
+
+// Agrega un evento de cambio al elemento select
+select.addEventListener('change', function () {
+  // Verifica si se ha realizado una selección
+  if (select.value !== 'Role') {
+    // Habilita el botón
+    submitButton.removeAttribute('disabled');
+  } else {
+    // Deshabilita el botón
+    submitButton.setAttribute('disabled', 'true');
+  }
+});
