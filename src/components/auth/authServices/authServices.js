@@ -187,43 +187,6 @@ class AuthServices {
     }
   };
 
-  /* //////////////////////////////////// */
-  /* Jwt & Session Logout */
-  /* //////////////////////////////////// */
-  /*   logout = async (req, res) => {
-    try {
-      res.clearCookie('jwt');
-      await new Promise((resolve, reject) => {
-        req.session.destroy((err) => {
-          if (err) {
-            const response = { status: 500, success: false, error: err };
-            req.logoutResult = response;
-            reject(response);
-          } else {
-            const response = { status: 200, success: true, message: 'Logout exitoso' };
-            req.logoutResult = response;
-            resolve(response);
-          }
-          req.logger.debug('Logout success');
-        });
-      });
-
-      const user = await usersServices.findById(req.user._id);
-      const previousLastConnection = user.last_connection;
-
-      user.last_connection = new Date();
-      await user.save();
-
-      req.logger.debug(`Logout last_connection -> previous: ${previousLastConnection.toISOString()} -> new: ${user.last_connection.toISOString()}`);
-
-      return req.logoutResult;
-    } catch (err) {
-      req.logger.error('Error durante el logout');
-      const response = { status: 500, success: false, error: 'Error durante el logout' };
-      req.logoutResult = response;
-      return response;
-    }
-  }; */
   logout = async (req, res) => {
     try {
       res.clearCookie('jwt');
