@@ -77,7 +77,7 @@ class AuthController {
 
       await user.save();
 
-      req.logger.debug('Login GitHub success', JSON.stringify(user));
+      req.logger.debug('Login GitHub success');
       req.logger.debug(`Login last_connection -> previous: ${previousLastConnection.toISOString()} -> new: ${user.last_connection.toISOString()}`);
 
       res.redirect('/products');
