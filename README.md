@@ -16,10 +16,9 @@ Este repositorio contiene el desafío "Cuarta práctica integradora" con las sig
 
 https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/23b48dbb-886b-479d-a3a3-bf005af42e63
 
-
 ## Modelo de User
 
-- El modelo de User cuenta con una nueva propiedad “documents” al cual es un array que contiene los objetos con las siguientes propiedades:
+- El modelo de User cuenta con una nueva propiedad “documents” la cual es un array que contiene los objetos con las siguientes propiedades:
 
   - name: String (Nombre del documento).
   - reference: String (link al documento).
@@ -29,10 +28,10 @@ https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/3519968
 <small>Directorio/s de referencia</small>
 
 - `/src/models/users.js`: Modelo de users.
+
 ### Video Modelo de User
 
 https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/e16f63c4-03da-4265-9e57-576292df52bd
-
 
 ## Endpoint /api/users/:uid/documents
 
@@ -59,8 +58,8 @@ https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/3519968
 <small>Directorio/s de referencia</small>
 
 - `/src/utils/multer/multer.js` Configuración del middleware de Multer.
-  
-### Video -  Endpoint /api/users/:uid/documents + Middleware de Multer
+
+### Video - Endpoint /api/users/:uid/documents + Middleware de Multer
 
 https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/d7a8fedb-257a-4a40-b152-0e5cf88ddf06
 
@@ -76,10 +75,7 @@ https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/3519968
 
 ### Video - Endpoint /api/users/premium/:uid
 
-
 https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/1a22031c-c8c6-40ba-ad52-c831ad174988
-
-
 
 ## Requisitos
 
