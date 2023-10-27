@@ -34,7 +34,7 @@ class AuthServices {
           first_name: firstName,
           last_name: firstName,
           email,
-          age: 0,
+          age: 33,
           password: createHash('1111'),
           role,
         });
