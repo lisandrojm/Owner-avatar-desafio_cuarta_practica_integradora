@@ -59,6 +59,10 @@ https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/3519968
 <small>Directorio/s de referencia</small>
 
 - `/src/utils/multer/multer.js` Configuración del middleware de Multer.
+  
+### Video -  Endpoint /api/users/:uid/documents + Middleware de Multer
+
+https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/d7a8fedb-257a-4a40-b152-0e5cf88ddf06
 
 ## Endpoint /api/users/premium/:uid
 
