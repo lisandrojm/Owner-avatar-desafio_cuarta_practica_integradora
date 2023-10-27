@@ -24,6 +24,11 @@ Este repositorio contiene el desafío "Cuarta práctica integradora" con las sig
 <small>Directorio/s de referencia</small>
 
 - `/src/models/users.js`: Modelo de users.
+### Video Modelo de User
+
+
+https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/1cdfb7d5-b3c6-4378-9181-3773eda631f5
+
 
 ## Endpoint /api/users/:uid/documents
 
