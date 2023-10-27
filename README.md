@@ -31,7 +31,7 @@ https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/3519968
 - `/src/models/users.js`: Modelo de users.
 ### Video Modelo de User
 
-
+https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/87f8b8a6-02fa-4a94-a836-521cc780a67b
 
 ## Endpoint /api/users/:uid/documents
 
