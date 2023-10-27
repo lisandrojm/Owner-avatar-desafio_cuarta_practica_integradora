@@ -12,6 +12,11 @@ Este repositorio contiene el desafío "Cuarta práctica integradora" con las sig
 - `/src/components/users/usersController/usersController.js` : Controlador de users.
 - `/src/components/users/usersServices/usersServices.js`: Servicios de users.
 
+### Video - Ruta /api/users/premium/:uid
+
+https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/23b48dbb-886b-479d-a3a3-bf005af42e63
+
+
 ## Modelo de User
 
 - El modelo de User cuenta con una nueva propiedad “documents” al cual es un array que contiene los objetos con las siguientes propiedades:
@@ -26,8 +31,6 @@ Este repositorio contiene el desafío "Cuarta práctica integradora" con las sig
 - `/src/models/users.js`: Modelo de users.
 ### Video Modelo de User
 
-
-https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/1cdfb7d5-b3c6-4378-9181-3773eda631f5
 
 
 ## Endpoint /api/users/:uid/documents
