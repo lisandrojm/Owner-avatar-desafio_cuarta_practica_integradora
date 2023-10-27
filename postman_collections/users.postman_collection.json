@@ -312,6 +312,76 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "uploadDocuments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"documents\": \"image.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/:uid/documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						":uid",
+						"documents"
+					],
+					"variable": [
+						{
+							"key": "uid",
+							"value": "652fde3ad4c6ef46de2221ce"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteDocumentById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/:uid/document/:did",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						":uid",
+						"document",
+						":did"
+					],
+					"variable": [
+						{
+							"key": "uid",
+							"value": "652fde3ad4c6ef46de2221ce"
+						},
+						{
+							"key": "did",
+							"value": "6531b3b6c5c1ff4ddee969e2"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
