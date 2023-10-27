@@ -74,7 +74,12 @@ https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/3519968
 
 ---
 
-### Video "Cuarta práctica integradora"
+### Video - Endpoint /api/users/premium/:uid
+
+
+https://github.com/lisandrojm/desafio_cuarta_practica_integradora/assets/35199683/1a22031c-c8c6-40ba-ad52-c831ad174988
+
+
 
 ## Requisitos
 
