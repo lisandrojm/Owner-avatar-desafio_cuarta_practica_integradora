@@ -165,7 +165,7 @@ class CartsServices {
 
       // Emitir el evento para actualizar la cantidad total de productos
       req.app.io.emit('updateTotalCartProducts', updatedTotalProducts);
-      console.log('updatedTotalProducts de deleteProductFromCart total', updatedTotalProducts);
+      /*       console.log('updatedTotalProducts de deleteProductFromCart total', updatedTotalProducts); */
 
       return res.sendSuccess({
         message: 'Producto eliminado del carrito correctamente',
